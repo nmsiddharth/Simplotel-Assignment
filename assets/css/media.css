@@ -1,0 +1,54 @@
+/* Mobile version*/
+@media(max-width:768px) {
+    .head {
+        flex-direction: column;
+        justify-content: start;
+        align-items: start;
+        position: relative;
+
+    }
+
+    .head>nav>a {
+        padding: 7px 13px;
+    }
+
+    .head>.icons {
+        position: absolute;
+        right: 20px;
+        top: 120px;
+    }
+
+    .container1>.content {
+        position: absolute;
+        background-color: rgba(217, 130, 124, 0.7);
+        top: 60%;
+        left: 8%;
+    }
+
+    .container2>.card {
+        flex-flow: column;
+        gap: 40px;
+    }
+}
+
+/* Tablet version */
+@media (min-width:769px) and (max-width:1200px) {
+    .head>nav>a {
+        padding: 0px 3px;
+    }
+
+    .container2>.card {
+        flex-flow: row wrap;
+        gap: 50px;
+        justify-content: space-around;
+    }
+
+    .container2>.card>.food {
+        width: 38%;
+    }
+
+    .container2>.card>.food>img {
+        width: 100%;
+
+    }
+}
