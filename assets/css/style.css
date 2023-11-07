@@ -4,66 +4,63 @@
     font-family: Georgia, 'CanvaSans-Bold', 'proRegular';
 }
 
-.head {
+header{
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
-}
-
-.head {
-    position: relative;
-    padding: 10px;
-}
-
-.head>nav>a {
+  }
+  header>nav>ul{
+    list-style-type: none;
+    float: left;
+    margin-right: 280px;
+  }
+  header>nav>ul>li{
+    display: inline-block;
+    padding: 15px 25px;
+  }
+  header>nav>ul>li>a{
     text-decoration: none;
-    padding: 0px 25px;
-    font-size: 23px;
     color: black;
-    font-weight: 500;
-}
-
-.head>.icons {
-    position: absolute;
-    right: 40px;
-}
-
-.fa-phone {
-    border: 2px solid black;
-    color: black;
-    padding: 5px;
-    font-size: 15px;
-    border-radius: 100%;
-}
-
-.fa-cart-shopping {
-    border: 1px solid transparent;
-    padding: 5px;
-    color: black;
-    font-size: 20px;
-}
-
+    font-size: 18px;
+    letter-spacing: 2px;
+    transition: 0.3s ease-in-out;
+  }
+  header>nav>ul>li>a:hover{
+    color:crimson;
+  }
+  header>nav>.icon{
+    float: right;
+    margin-right: 20px;
+  }
+  header>nav>.icon>img{
+    padding: 15px 5px 0px 0px;
+    height: 20px;
+  }
+  header>nav>.icon>img:hover{
+    cursor:pointer;
+  }
 /* Section 1 */
 
 .container1 {
     background: linear-gradient(to right, #ff6fbd, #ffad9b, #ffd165);
-    height: 950px;
+    height: 850px;
 }
 
-.container1>img {
-    height: 800px;
-    width: 100%;
-    position: relative;
+.bgImg{
+    background: url(../images/bg1.jpg)no-repeat center;
+    background-size: cover;
+    height: 700px;
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
 }
 
-.container1>.content {
-    position: absolute;
+.container1>.bgImg>.content {
     background-color: rgba(217, 130, 124, 0.7);
-    top: 41%;
-    left: 8%;
-    padding: 30px 50px;
-    padding-right: 120px;
+    padding: 20px;
+    margin:0px 0px 100px 70px;
 }
+
 
 .content>h1 {
     font-size: 50px;
@@ -80,7 +77,6 @@
 /* Section 2 */
 .container2 {
     background: linear-gradient(to right, #ff6fbd, #ffad9b, #ffd165);
-    margin-top: 20px;
     height: fit-content;
 }
 
@@ -112,6 +108,10 @@
     padding: 20px;
     text-align: center;
     width: 295px;
+    transition: 0.3s ease-in-out;
+}
+.container2>.card>.food:hover{
+    transform: scale(1.05,1.05);
 }
 
 .container2>.card>.food>h2 {
@@ -132,4 +132,10 @@ button {
     border-radius: 50px;
     border: 0px solid transparent;
     font-weight: bolder;
+    transition: 0.3s ease-in-out;
+}
+button:hover{
+    cursor: pointer;
+    background-color: white;
+    color: black;
 }

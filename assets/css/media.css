@@ -1,40 +1,57 @@
 /* Mobile version*/
 @media(max-width:768px) {
-    .head {
-        flex-direction: column;
-        justify-content: start;
-        align-items: start;
-        position: relative;
-
+    header{
+        justify-content: center;
+        align-items: center;
+        text-align: center;
     }
-
-    .head>nav>a {
-        padding: 7px 13px;
+    header>nav{
+        text-align: center;
     }
-
-    .head>.icons {
-        position: absolute;
-        right: 20px;
-        top: 120px;
+    header>nav>ul{
+        float: none;
+        margin: auto;
     }
-
-    .container1>.content {
-        position: absolute;
-        background-color: rgba(217, 130, 124, 0.7);
-        top: 60%;
-        left: 8%;
+    header>nav>ul>li{
+        display: block;
+        margin: none;
     }
-
+    header>nav>.icon{
+        float: none;
+        margin: 10px auto;
+        text-align: center;
+    }
+    .container1>.bgImg>.content {
+        margin:0px 25px 100px 25px;
+    }
     .container2>.card {
         flex-flow: column;
         gap: 40px;
+    }
+    .container2>.card>.food {
+        width: 80%;
+    }
+
+    .container2>.card>.food>img {
+        width: 100%;
+
     }
 }
 
 /* Tablet version */
 @media (min-width:769px) and (max-width:1200px) {
-    .head>nav>a {
-        padding: 0px 3px;
+    header{
+        justify-content: center;
+        align-items: center;
+    }
+    header>nav>ul{
+        float: none;
+        margin: auto;
+    }
+    header>nav>.icon{
+        float: none;
+        text-align: center;
+        margin-bottom: 10px;
     }
 
     .container2>.card {
